@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 25px;
+  justify-content: center;
+  align-content: start;
+  padding: 30px;
+}
+
+.job-card {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  color: #111;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background: #111;
+  color: #e50914;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.save-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  color: #555;
+  cursor: pointer;
+}
+
+.job-info {
+  margin-top: 35px;
+}
+
+.company {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.company span {
+  font-size: 11px;
+  color: #999;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.job-info h2 {
+  font-size: 21px;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.tags span {
+  background: #eee;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.salary h3 {
+  font-size: 19px;
+}
+
+.salary p {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.apply-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #e50914;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1150px) {
+  .main-container {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media (max-width: 750px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px;
+  }
+
+  .job-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
